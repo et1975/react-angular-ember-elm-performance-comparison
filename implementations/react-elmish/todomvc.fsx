@@ -17,6 +17,7 @@ open Fable.Core
 open Fable.Import
 open Elmish
 
+
 let [<Literal>] ESC_KEY = 27.
 let [<Literal>] ENTER_KEY = 13.
 let [<Literal>] ALL_TODOS = "all"
@@ -168,7 +169,7 @@ let viewInput (model:string) dispatch =
             Value (U2.Case1 model)
             onEnter Add dispatch
             OnChange ((fun (ev:React.FormEvent) -> ev.target?value) >> unbox >> UpdateField >> dispatch)
-            AutoFocus true
+            //AutoFocus true
         ] []
     ]
 

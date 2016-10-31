@@ -1,24 +1,20 @@
 {
-    "module": "amd",
     "sourceMaps": true,
     "projFile": "./todomvc.fsx",
     "outDir": "out",
-    "scripts": {
+//    "babelPlugins": ["transform-runtime"],
+    "rollup": {
+        "plugins": [
+            ["replace", {"process.env.NODE_ENV": "'production'"}],
+            ["commonjs", {
+                "namedExports": {
+                    "react": ["Component", "createElement"],
+                    "react-dom": ["render"]
+                }
+            }]
+        ]
     },
     "targets": {
-        "debug": {
-            "watch": true,
-            "symbols": [
-                "DEV_SERVER"
-            ],
-            "scripts": {
-            }
-        },
-        "production": {
-            "sourceMaps": false,
-            "scripts": {
-                "postbuild": "node node_modules/webpack/bin/webpack -p"
-            }
-        }
+        "debug": { "watch": true }
     }
 }
