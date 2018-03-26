@@ -16,7 +16,7 @@ var out_path = resolve("./public");
 
 module.exports = {
   devtool: "source-map",
-  entry: resolve('src/todomvc.fsproj'),
+  entry: resolve('src/React.TodoMVC.fsproj'),
   output: { filename: 'bundle.js',
             path: out_path },
   devServer: {

@@ -1,16 +1,35 @@
 {
-  "private": true,
+  "name": "fable_elmish_github_io",
+  "version": "1.0.0",
+  "description": "Simple Fable App",
+  "scripts": {
+    "build": "webpack -p",
+    "start": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "core-js": "^2.1.0",
-    "fable-core": "^0.6.1",
-    "requirejs": "^2.1.22",
-    "todomvc-app-css": "^2.0.0",
-    "todomvc-common": "^1.0.1"
+    "babel-runtime": "^6.23.0",
+    "font-awesome": "^4.7.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "sass-font-awesome": "^1.0.2"
   },
   "devDependencies": {
-    "fable-import-react": "^0.5.0"
-  },
-  "engines": {
-    "fable": "^0.6.4"
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "fable-loader": "^1.0.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.16.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.9.0"
   }
 }

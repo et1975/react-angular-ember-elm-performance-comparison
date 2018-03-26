@@ -1,0 +1,8 @@
+source https://nuget.org/api/v2
+storage: none
+
+nuget FSharp.Core  redirects:force, content:none
+nuget Fable.Core
+nuget Fable.React 2.0
+
+clitool dotnet-fable

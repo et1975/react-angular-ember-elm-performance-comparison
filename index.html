@@ -41,8 +41,10 @@
     var div = document.getElementById('sidebar');
     var picker = Elm.Picker.embed(div, [
       impl('React', '15.3.1', false, 'react-15.3.1/index.html'),
-      impl('React+elmish', '15.3.1', false, 'react-elmish/index.html'),
-      impl('React-fable', '15.3.1', true, 'react-fable/index.html'),
+      impl('React+elmish', '15/1.x', false, 'react-elmish/index.html'),
+      impl('React+elmish', '15/2.x', false, 'react-elmish2/index.html'),
+      impl('React+elmish', '15/1.x', true, 'react-elmish-opt/index.html'),
+      impl('React-fable', '15/1.x', false, 'react-fable/index.html'),
       impl('Elm', '0.17', false, 'elm-0.17/index.html'),
       impl('React', '15.3.1', true, 'react-15.3.1-optimized/index.html'),
       impl('Elm', '0.17', true, 'elm-0.17-optimized/index.html')
